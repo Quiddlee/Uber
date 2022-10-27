@@ -136,3 +136,57 @@ nav {
     color: #FFFFFF;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21);
 }
+
+.reasons {
+    min-height: 850px;
+    padding: 18px 0 67px 0;
+}
+
+.reasons .square {
+    display: block;
+    margin: 0 auto;
+    width: 115px;
+    height: 27px;
+    background: #000000;
+    font-weight: 400;
+    font-size: 11px;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 6px;
+}
+
+.reasons .upper_text {
+    margin-top: 33px;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+.reasons .reasons_items {
+    padding: 0 45px 0 33px;
+}
+
+.reasons .reasons_items .reasons_round {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 116px;
+    height: 116px;
+    background: #1EACC7;
+    border-radius: 100%;
+}
+
+.reasons .reasons_items .reasons_descr {
+    max-width: 371px;
+}
+
+.reasons .reasons_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
