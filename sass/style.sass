@@ -1,6 +1,12 @@
 $blue-text: #1EACC7
 $red-text: #FF5656
 
+=btn_hover
+    &:hover
+        background: none
+        background-color: $blue-text
+
+
 *
     font-family: "Roboto", sans-serif
 
@@ -22,12 +28,12 @@ nav
     margin: 0
     list-style-type: none
 
-    .menu_link
+    &_link
         font-weight: 300
         font-size: 15px
         color: #FFFFFF
 
-    .menu_item
+    &_item
         border-right: 2px dotted black
         padding-right: 43px
 
@@ -38,26 +44,26 @@ nav
     height: 87px
     background: rgba(0, 0, 0, 0.6)
 
-    .subheader_logo
+    &_logo
         display: block
         min-width: 100%
         margin-top: 16px
 
-    .subheader_official
+    &_official
         margin-top: 6px
         font-weight: 100
         font-size: 13px
         color: #FFFFFF
         opacity: 0.5
 
-    .subheader_call
+    &_call
         font-weight: 300
         font-size: 12px
         color: #FFFFFF
         text-align: right
         margin-top: 19px
 
-    .subheader_phone
+    &_phone
         display: block
         margin-top: 8px
         font-weight: 400
@@ -67,7 +73,7 @@ nav
         text-align: right
         line-height: 12px
 
-    .subheader_btn
+    &_btn
         margin-top: 19px
         position: absolute
         width: 172px
@@ -78,16 +84,20 @@ nav
         font-weight: 400
         font-size: 14px
         line-height: 46px
+        text-transform: uppercase
         color: #FFFFFF
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
         border: none
+        +btn_hover
+        
+        
 
 .promo
     min-height: 800px
     background: url(../img/bg/uber_main_bg.png) center (center / cover) no-repeat
     padding: 150px 0 135px 0
 
-    .promo_header
+    &_header
         font-weight: 700
         font-size: 60px
         text-align: center
@@ -95,7 +105,7 @@ nav
         color: #FFFFFF
         margin: 0
 
-    .promo_subheader
+    &_subheader
         margin-top: 22px
         font-weight: 700
         font-size: 36px
@@ -104,7 +114,7 @@ nav
         color: #FFFFFF
         margin: 0
 
-    .promo_descr
+    &_descr
         font-weight: 400
         font-size: 18px
         line-height: 24px
@@ -112,7 +122,7 @@ nav
         color: #FFFFFF
         margin-top: 23px
 
-    .promo_btn
+    &_btn
         display: block
         margin: 118px auto 0 auto
         width: 259px
@@ -128,6 +138,9 @@ nav
         text-transform: uppercase
         color: #FFFFFF
         text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.21)
+        +btn_hover
+        
+        
 
 .reasons, .mobile, .choice
     padding: 18px 0 67px 0
@@ -155,12 +168,12 @@ nav
         text-transform: uppercase
         color: #222222
 
-    .reasons_block
+    &_block
         display: flex
         justify-content: center
         margin-top: 26px
 
-    .reasons_round
+    &_round
         display: flex
         justify-content: center
         align-items: center
@@ -170,7 +183,7 @@ nav
         background-color: $blue-text
         border-radius: 100%
 
-    .reasons_descr
+    &_descr
         max-width: 430px
         color: rgba(32, 32, 32, 0.8)
         font-weight: 300
@@ -237,8 +250,37 @@ nav
             background-color: #000000
             margin: 0 auto
             border-radius: 100%
-            padding: 6px
             cursor: pointer
+            &:before
+                content: ''
+                position: absolute
+                display: block
+                // top: 50%
+                // transform: translateY(-50%)
+                width: 14px
+                height: 1.5px
+                background-color: $blue-text
+                transition: 0.1s all
+            &:after
+                content: ''
+                position: absolute
+                display: block
+                left: 50%
+                transform: translateX(-50%)
+                height: 14px
+                width: 2px
+                background-color: $blue-text
+                transition: 0.1s all
+            &:hover
+                &:before
+                    background-color: $red-text
+                    width: 60%
+                &:after
+                    background-color: $red-text
+                    height: 60%
+
+                            
+
             
 .choice
     padding: 56px 0 137px 0
