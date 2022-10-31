@@ -1,0 +1,71 @@
+@media (max-width: 1200px)
+    .menu
+        &_item
+            padding-right: 20px
+        &_link
+            font-size: 13px
+    .promo
+        &_header
+            font-size: 50px
+    .reasons
+        &_block
+            align-items: flex-start 
+        &_descr
+            width: 300px   
+@media (max-width: 991px)
+    .menu
+        &_item
+            padding-right: 10px
+        &_link
+            font-size: 10px
+    .subheader
+        &_logo
+            img
+                width: 100%
+        &_official
+            font-size: 12px
+        &_phone
+            font-size: 18px     
+        &_btn
+            margin-top: 21px
+            height: 40px
+            width: 20%
+    .promo
+        &_header
+            font-size: 40px
+        &_subheader
+            font-size: 30px
+            margin-top: 3px  
+    .reasons
+        &_block
+            flex-direction: column
+            align-items: center
+        &_descr
+            width: 300px  
+            margin-top: 20px
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center 
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0, 0, 0, .8)
+        transition: 0.6s all
+        &_active
+            left: 0
+        &_item
+            padding-right: 0
+            border: none
+            margin: 10px 0  
+        &_link
+            font-size: 20px
+
+
+        
+    
