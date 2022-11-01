@@ -11,7 +11,12 @@
         &_block
             align-items: flex-start 
         &_descr
-            width: 300px   
+            width: 300px  
+    footer
+        .links
+            right: 0px
+            scale: 80%        
+
 @media (max-width: 991px)
     .menu
         &_item
@@ -45,6 +50,25 @@
         &_descr
             width: 300px  
             margin-top: 20px
+    .mobile
+        &_item
+            &_subtitle
+                font-size: 17px
+    footer
+        .socials
+            scale: 70%
+        .footer_text
+            padding: 10px 0 10px 0
+            .upper_text
+                font-size: 12px
+            .bottom_text
+                font-size: 9px
+            .language
+                &_text   
+                    font-size: 9px
+        .links
+            right: -40px
+            scale: 55% 
 
 @media (max-width: 767px)
     .menu
@@ -113,6 +137,25 @@
     .promo
         &_header
             line-height: 45px
+    footer
+        .socials
+            scale: 65%
+        .footer_text
+            padding: 10px 0 10px 0
+            .upper_text
+                font-size: 15px
+                margin-right: 5px
+            .bottom
+                margin-top: 0    
+                .bottom_text
+                    font-size: 9px
+            .language
+                &_text   
+                    font-size: 9px
+        .links
+            right: -40px
+            scale: 55%     
+    
 @media (max-width: 575px)
     nav
         height: 30px
