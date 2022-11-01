@@ -40,6 +40,8 @@
         &_block
             flex-direction: column
             align-items: center
+        &_round
+            margin-right: 0
         &_descr
             width: 300px  
             margin-top: 20px
@@ -68,13 +70,13 @@
     .hamburger
         display: block
         position: absolute
-        right: 10px
+        right: 10vh
         top: 50%
         transform: translateY(-50%)
         width: 26px
         height: 12px
         span
-            displat: block
+            display: block
             height: 2px
             width: 100%
             background-color: #fff
@@ -89,7 +91,83 @@
                     display: none
                 &:nth-child(3)
                     transform: translateY(3px) rotate(45deg)
-                    
-
-        
-    
+    .xs-hidden
+        display: none             
+    .xs-visible
+        display: block
+    .subheader
+        &_phone
+            display: block
+            margin-top: 10px
+            font-weight: 400
+            font-size: 16px
+            text-transform: uppercase
+            color: #FFFFFF
+            text-align: center
+        &_btn
+            display: block
+            width: 200px
+            height: 40px   
+            margin: 0 auto
+            margin-top: 10px
+    .promo
+        &_header
+            line-height: 45px
+@media (max-width: 575px)
+    nav
+        height: 30px
+    header
+        height: 30px
+    .subheader
+        top: 30px
+        height: 60px
+        &_official
+            display: none
+        &_logo
+            margin-top: 16px
+        &_phone
+            font-weight: 400
+            font-size: 12px 
+            text-transform: uppercase
+            margin-top: 11px
+        &_btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 6px
+    .promo
+        padding: 73px 0 35px 0
+        min-height: 400px
+        &_descr
+            display: none
+        &_header
+            font-size: 30px 
+            padding: 0 24px
+            line-height: 35px
+        &_subheader
+            margin-top: 33px
+            font-size: 20px
+            padding: 0 10px 
+            line-height: 30px
+        &_btn
+            width: 210px
+            height: 50px
+            margin-top: 72px    
+    .menu
+        width: 85%
+    .reasons
+        padding: 22px 0 36px 0 
+        &_block
+            margin-top: 26px
+        &_round
+            widows: 100px
+            height: 100px 
+        &_descr
+            width: 100%
+            margin-top: 27px
+        span
+            font-size: 16px
+        .upper_text
+            font-size: 16px
+            margin-top: 15px
+            line-height: 16px
