@@ -70,6 +70,9 @@
             scale: 55% 
 
 @media (max-width: 767px)
+    .square
+        scale: 120%
+
     .menu
         position: fixed
         flex-direction: column
@@ -93,7 +96,7 @@
     .hamburger
         display: block
         position: absolute
-        right: 10vh
+        right: 2vh
         top: 50%
         transform: translateY(-50%)
         width: 26px
@@ -138,13 +141,9 @@
         &_header
             line-height: 45px
     .reasons
-        .square
-            scale: 150%
         .upper_text
             font-size: 22px
     .mobile
-        .square
-            scale: 150%
         &_item
             margin-top: 30px
             height: 400px
@@ -152,15 +151,11 @@
                 font-size: 35px 
                 line-height: 70px 
             &_plus
-                scale: 150% 
+                scale: 125% 
     .choice
-        .square
-            scale: 150%
         .title
             font-size: 30px
     .require
-        .square
-            scale: 150%
         .title
             margin-top: 15px
             font-size: 23px 
@@ -168,8 +163,6 @@
 
 
     .world
-        .square
-            scale: 150%
         .title
             margin-top: 17px
             font-size: 27px
@@ -222,6 +215,8 @@
                 margin: 0 4px 0 4px
    
 @media (max-width: 575px)
+    .title, .upper_text
+        font-size: 18px
     nav
         height: 30px
     header
@@ -239,7 +234,6 @@
             text-transform: uppercase
             margin-top: 11px
         &_btn
-            // right: 45px
             width: 110px
             height: 22px
             font-size: 10px
@@ -279,6 +273,24 @@
         span
             font-size: 16px
         .upper_text
-            font-size: 16px
-            margin-top: 15px
-            line-height: 16px
+            font-size: 18px
+            margin-top: 8px
+    .mobile
+        .title
+            margin-top: 11px
+            font-size: 20px
+        .subtitle
+            margin-top: 0px
+            line-height: 25px
+        &_item
+            &_subtitle
+                font-size: 25px
+                line-height: 45px
+            &_plus
+                &::before
+                    height: 2.5px
+                &::after
+                    width: 2.5px
+    
+        
+
