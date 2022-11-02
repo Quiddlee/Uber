@@ -133,29 +133,83 @@
             width: 200px
             height: 40px   
             margin: 0 auto
+            right: 65px
             margin-top: 10px
     .promo
         &_header
             line-height: 45px
+
+    .mobile
+        &_item
+            height: 400px
+            &_subtitle
+                font-size: 35px 
+                line-height: 70px 
+            &_plus
+                scale: 150% 
+    .require
+        .square
+            scale: 150%
+        .title
+            margin-top: 15px
+            font-size: 23px 
+        &_list
+
+
+    .world
+        .square
+            scale: 150%
+        .title
+            margin-top: 17px
+            font-size: 27px
+        .subtitle
+            font-size: 23px
+        &_link
+            font-size: 24px
+
     footer
-        .socials
-            scale: 65%
+        padding: 27px 0 30px 0
+        .socials    
+            display: flex
+            position: static
+            justify-content: center
+            align-items: center
+            scale: 100%
+            padding: 0
+            &_item
+                margin: 140px 6px 0 6px 
+
         .footer_text
+            margin-top: 12px
+            display: flex
+            flex-direction: column
             padding: 10px 0 10px 0
             .upper_text
                 font-size: 15px
-                margin-right: 5px
+                margin: 0 15px 0 15px
             .bottom
-                margin-top: 0    
+                width: 285px
+                margin: 0 auto
                 .bottom_text
-                    font-size: 9px
+                    margin: 0 20px 0 20px
+                    font-size: 12px
+                    &_3, &_4, &_5, &_6
+                        margin: 0 14px 0 14px
             .language
-                &_text   
-                    font-size: 9px
+                &_text
+                    margin: 0   
+                    font-size: 12px
         .links
-            right: -40px
-            scale: 55%     
-    
+            display: flex
+            position: static
+            justify-content: center
+            align-items: center
+            scale: 100% 
+            padding: 0
+            margin-top: 19px
+            &_item
+                margin: 0 4px 0 4px
+   
 @media (max-width: 575px)
     nav
         height: 30px
