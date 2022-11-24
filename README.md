@@ -1,4 +1,4 @@
-# Uber website
+# Uber | Html/Css course project
 **Stack:**
 1. Html
 2. Sass
